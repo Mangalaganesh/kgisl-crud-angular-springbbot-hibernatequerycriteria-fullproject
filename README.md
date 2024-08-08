@@ -1,0 +1,1 @@
+# kgisl-crud-angular-springbbot-hibernatequerycriteria-fullproject
