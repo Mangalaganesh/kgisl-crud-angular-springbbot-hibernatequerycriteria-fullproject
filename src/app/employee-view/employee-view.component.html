@@ -1,0 +1,47 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="
+https://fontawesome.com/v4/icons/
+ "
+/>
+
+<div class="container">
+    <div class="sidebar">
+        <ul>
+            <li><i class="fa fa-user-circle-o" aria-hidden="true" style="font-size:24px"></i><a routerLink="/employeeregistration">Employee Registration</a></li>
+            <li><i class="fa fa-server" style="font-size:24px"></i><a routerLink="/employee-view">Employee View</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <h3>Employee List</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Employee ID</th>
+                    <th>Employee Name</th>
+                    <th>Email ID</th>
+                    <th>Designation</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let employee of employees">
+                    <td>{{ employee.emp_Id }}</td>
+                    <td>{{ employee.name }}</td>
+                    <td>{{ employee.emailId }}</td>
+                    <td>{{ employee.designation }}</td>
+                    <td>
+                        <button (click)="updateEmployee(employee)" title="Update">
+                            <i class="fa fa-edit"></i> <!-- Font Awesome pencil icon for update -->
+                        </button>
+                        &nbsp;
+                        <button (click)="deleteEmployee(employee)" title="Delete">
+                            <i class="fa fa-trash"></i> <!-- Font Awesome trash icon for delete -->
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,54 @@
+/* General Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; /* Light background color */
+  }
+  
+  /* Main Menu Container Styling */
+  .main-menu-container {
+    background-color: #fff; /* White background for the menu */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 40px; /* Padding inside the container */
+    width: 400px; /* Increased fixed width */
+    margin: 0 auto; /* Center the container horizontally */
+    text-align: center; /* Center text inside container */
+}
+  
+  /* Heading Styling */
+  .main-menu-container h2 {
+    margin-bottom: 20px; /* Space below heading */
+    color: #333; /* Dark gray for heading */
+  }
+  
+  /* Button Styling */
+  .main-menu-container button {
+    padding: 10px 20px; /* Padding for buttons */
+    margin: 10px 0; /* Space between buttons */
+    background-color: #5cb85c; /* Green background for buttons */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    color: white; /* White text color */
+    font-size: 16px; /* Font size for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Transition effect for hover */
+    width: 100%; /* Full width for buttons */
+  }
+  
+  .main-menu-container button:hover {
+    background-color: #4cae4c; /* Darker green on hover */
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .main-menu-container {
+      width: 90%; /* Full width on smaller screens */
+    }
+  }
+  

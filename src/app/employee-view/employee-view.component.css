@@ -1,0 +1,84 @@
+.container {
+    display: flex; /* Use flexbox for layout */
+    
+}
+
+.sidebar {
+    width: 250px; /* Sidebar width */
+    /* background-color: #f8f9fa;  */
+    /* Sidebar background color */
+    /* background: linear-gradient(135deg, #b4bbc3, rgb(10 188 217 / 20%)); */
+    background: linear-gradient(135deg, #79d378, rgb(10 188 217 / 20%));
+    min-height: 100vh; /* Full height */
+    padding: 20px; /* Padding inside sidebar */
+  }
+  
+  .sidebar ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0;
+    /* Remove padding */
+  }
+  
+  .sidebar ul li {
+    margin: 15px 0; /* Spacing between items */
+    display: flex; /* Use flexbox to align items in a row */
+    align-items: center; /* Center items vertically */
+    width: 100%; /* Make the list item take the full width */
+  }
+
+  .sidebar ul li i {
+    margin-right: 10px; /* Space between the icon and the text */
+    width: 24px; /* Fixed width for the icon */
+}
+  
+  .sidebar ul li a {
+    display: inline-flex; /* Use inline-flex to align items */
+    align-items: center; /* Center items vertically */
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Text color */
+    padding: 10px; /* Add padding */
+    transition: all 0.3s; /* Transition effect */
+    width: calc(100% - 34px); /* Width calculation, leaving space for the icon */
+    white-space: nowrap; /* Prevent text wrapping */
+    
+  }
+  
+  .sidebar ul li a:hover {
+    background-color: #e9ecef; /* Change background on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+  }
+
+.main-content {
+    flex-grow: 1; /* Allow main content to fill the remaining space */
+     background-color: #fff; 
+     /* White background for the main content */
+    padding: 20px; /* Padding inside main content */
+    min-height: 100vh; /* Ensure it takes full height */
+    /* background: linear-gradient(135deg, #505760, rgb(10 188 217 / 20%)); */
+}
+
+table {
+    width: 100%; /* Full width for the table */
+    border-collapse: collapse; /* Collapse borders */
+    margin-top: 20px; /* Space above the table */
+}
+
+th, td {
+    border: 1px solid #ddd; /* Light border for cells */
+    padding: 8px; /* Padding inside cells */
+    text-align: left; /* Align text to the left */
+}
+
+th {
+    background-color: #f2f2f2; /* Light gray background for header */
+}
+
+button {
+    background: none; /* No background for buttons */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+button:hover {
+    opacity: 0.7; /* Slightly fade on hover */
+}

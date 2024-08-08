@@ -1,0 +1,105 @@
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="
+https://fontawesome.com/v4/icons/
+ "
+/>
+
+
+<div class="container">
+  <div class="sidebar">
+    <ul>
+      <li><i class="fa fa-user-circle-o" aria-hidden="true" style="font-size:24px"></i><a routerLink="/employeeregistration">Employee Registration</a></li>
+      <li><i class="fa fa-server" style="font-size:24px"></i><a routerLink="/employee-view">Employee View</a></li>
+    </ul>
+  </div>
+
+  <div class="regpage">
+    <!-- <div class="container1"> -->
+
+
+    <div class="employee-registration-container">
+      <h2>Employee Registration</h2>
+      <form #employeeForm="ngForm" (ngSubmit)="registerEmployee(employeeForm)">
+
+        <!-- <label for="employeeId">Employee ID:</label> -->
+        <!-- <input type="text" id="employeeId" [(ngModel)]="employee.employeeId" name="employeeId" required> -->
+
+        <label for="name">Employee Name:</label>
+        <input type="text" id="name" [(ngModel)]="employee.name" name="name" required>
+        <div *ngIf="employeeForm.submitted && employeeForm.controls['name']?.invalid" class="error">
+          *Employee Name is required.
+        </div>
+
+        <label for="employeePhone">Employee Email:</label>
+        <input type="email" id="emailId" [(ngModel)]="employee.emailId" name="emailId" required>
+        <div *ngIf="employeeForm.submitted && employeeForm.controls['emailId']?.invalid" class="error">
+          *Employee Email is required.
+        </div>
+
+        <div *ngIf="employeeForm.controls['emailId']?.errors?.['email']">
+          *Employee Email must be in a valid format.
+        </div>
+        
+
+        <label for="designation">Employee Designation:</label>
+        <input type="text" id="designation" [(ngModel)]="employee.designation" name="designation" required>
+        <div *ngIf="employeeForm.submitted && employeeForm.controls['designation']?.invalid" class="error">
+          *Employee Designation is required.
+        </div>
+
+      
+
+        <label for="addresses">Addresses:</label>
+        <!-- <h3>Addresses</h3> -->
+        <div class="wrapper">
+          <div *ngFor="let address of employee.addresses; let i = index" class="address-container">
+            <div class="address-inputs">
+              <div class="g">
+                <div>
+                  <label for="street">Street:</label>
+                  <input type="text" id="street{{i}}" [(ngModel)]="address.street" name="street{{i}}" required>
+                </div>
+                <div *ngIf="employeeForm.submitted && employeeForm.controls['street' + i]?.invalid" class="error">
+                  *Street is required.
+                </div>
+              </div>
+
+              <div class="g">
+                <div>
+                  <label for="city">City:</label>
+                  <input type="text" id="city{{i}}" [(ngModel)]="address.city" name="city{{i}}" required>
+                </div>
+                <div *ngIf="employeeForm.submitted && employeeForm.controls['city' + i]?.invalid" class="error">
+                  *City is required.
+                </div>
+              </div>
+
+              <div class="g">
+                <div>
+                  <label for="state">State:</label>
+                  <input type="text" id="state{{i}}" [(ngModel)]="address.state" name="state{{i}}" required>
+                </div>
+                <div *ngIf="employeeForm.submitted && employeeForm.controls['state' + i]?.invalid" class="error">
+                  *State is required.
+                </div>
+              </div>
+
+              <i class="fa fa-trash remove-icon" (click)="removeAddress(i)" title="Remove Address"></i>
+              <!-- Font Awesome Trash icon -->
+            </div>
+          </div>
+
+
+
+
+          <button type="button" class="add-address-button" (click)="addAddress()">
+            <i class="fa fa-plus"></i> <!-- Font Awesome Plus icon -->
+          </button>
+        </div>
+        <button type="submit">{{ isEditing ? 'Update' : 'Register' }}</button>
+      </form>
+    </div>
+  <!-- </div> -->
+  </div>

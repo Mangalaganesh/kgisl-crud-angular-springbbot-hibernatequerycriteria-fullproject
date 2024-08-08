@@ -1,0 +1,25 @@
+.sidebar {
+    width: 200px;
+    background-color: #f8f9fa;
+    height: 100vh; /* Make sure the sidebar takes full height */
+    position: fixed; /* Fix the sidebar on the left */
+    left: 0;
+    top: 0;
+    padding: 20px;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin: 15px 0;
+  }
+  
+  .sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+
+  

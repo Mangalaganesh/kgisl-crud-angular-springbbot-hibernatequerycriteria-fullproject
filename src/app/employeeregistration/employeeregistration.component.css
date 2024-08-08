@@ -1,0 +1,270 @@
+/* General Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; /* Light background color for contrast */
+    
+    
+  }
+
+  
+
+  .container {
+    display: flex; /* Use flexbox for layout */   
+    background: linear-gradient(135deg, #505760, rgb(10 188 217 / 20%));
+  
+    
+  
+
+
+}
+
+
+
+.main-content {
+    flex-grow: 1; /* Allow main content to fill the remaining space */
+    background-color: #fff; /* White background for the main content */
+    padding: 20px; /* Padding inside main content */
+    min-height: 100vh; /* Ensure it takes full height */
+}
+
+  
+  
+  /* Container Styling */
+  .employee-registration-container {
+    /* background-color: #fff; */
+     /* White background for the form */
+  
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 40px; /* Padding inside the container */
+    width: 700px; /* Fixed width, adjust as needed */
+    margin-left: 13%;
+    text-align: center; /* Center text inside container */
+    margin-top: 20px;
+    
+  }
+
+       /* .regpage{ 
+    min-height: 100vh;
+    width:100%;
+    background-color: linear-gradient(135deg, #1d68bd, rgb(10 188 217 / 20%));
+    
+  }      */
+
+
+
+  
+  /* Heading Styling */
+  .employee-registration-container h2 {
+    margin-bottom: 20px; /* Space below heading */
+    color: #333; /* Dark gray for heading */
+  }
+  
+  /* Form and Label Styling */
+  .employee-registration-container form {
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Vertical stacking of elements */
+  }
+  
+  /* Label Styling */
+  .employee-registration-container label {
+    margin-bottom: 5px; /* Space below labels */
+    text-align: left; /* Align labels to the left */
+    color: #666; /* Gray color for labels */
+  }
+  
+  /* Input Styling */
+  .employee-registration-container input {
+    margin-bottom: 15px; /* Space below inputs */
+    padding: 10px; /* Padding inside input fields */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 14px; /* Font size */
+    width: 400px;
+  }
+  
+  /* Button Styling */
+  .employee-registration-container button {
+    padding: 10px; /* Padding for buttons */
+    background-color: #5cb891; /* Green background for buttons */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    color: white; /* White text color */
+    font-size: 16px; /* Font size for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Transition effect for hover */
+  }
+  
+  .employee-registration-container button:hover {
+    background-color: #4cae4c; /* Darker green on hover */
+  }
+  
+  .address-container {
+    margin-bottom: 20px; /* Space below address container */
+    padding: 10px; /* Padding inside address container */
+    border: 1px solid #ddd; /* Light border around address container */
+    border-radius: 5px; /* Rounded corners */
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Center items vertically */
+}
+
+.address-inputs {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    flex: 1; /* Allow this container to take available space */
+    width:33%
+}
+
+.address-inputs label {
+    margin-right: 2px; /* Space between label and input */
+}
+
+.address-inputs input {
+    margin-right: 10px; /* Space between inputs */
+    width: 150px;
+    flex: 0 0 150px; /* Set a fixed width (adjust this value) */
+}
+
+.remove-icon {
+    cursor: pointer; /* Pointer cursor on hover */
+    color: #d9534f; /* Red color for the icon */
+    font-size: 20px; /* Increase icon size */
+    margin-left: 0px; /* Space between input fields and icon */
+}
+
+.remove-icon:hover {
+    color: #c9302c; /* Darker red on hover */
+}
+
+
+  
+  /* Remove Button Styling */
+  .address-container button {
+    background-color: #d9534f; /* Red background for remove button */
+    margin-top: 5px; /* Space above the button */
+  }
+  
+  .address-container button:hover {
+    background-color: #c9302c; /* Darker red on hover */
+  }
+  
+  /* Add Address Button Styling */
+  .employee-registration-container .add-address-button {
+    margin-bottom: 20px; /* Space below add address button */
+  }
+  
+
+  
+
+  .add-address-button {
+    padding: 10px; /* Padding for the button */
+    background-color: #5cb85c; /* Green background */
+    border: none; /* No border */
+    border-radius: 50%; /* Make it round */
+    color: white; /* White text color */
+    font-size: 20px; /* Increase font size for visibility */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Transition for hover */
+    width: 40px; /* Fixed width for the button */
+    height: 40px; /* Fixed height for the button */
+    display: flex; /* Center icon */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+  }
+  
+  .add-address-button:hover {
+    background-color: #4cae4c; /* Darker green on hover */
+  }
+
+   
+  
+  .container {
+    display: flex; /* Use flexbox for layout */
+  }
+  
+  .sidebar {
+    width: 250px; /* Sidebar width */
+    /* background-color: #f8f9fa;  */
+    /* Sidebar background color */
+    /* background: linear-gradient(135deg, #b4bbc3, rgb(10 188 217 / 20%)); */
+    background: linear-gradient(135deg, #79d378, rgb(10 188 217 / 20%));
+    min-height: 100vh; /* Full height */
+    padding: 20px; /* Padding inside sidebar */
+  }
+  
+  .sidebar ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+  }
+  
+  .sidebar ul li {
+    margin: 15px 0; /* Spacing between items */
+    display: flex; /* Use flexbox to align items in a row */
+    align-items: center; /* Center items vertically */
+    width: 100%; /* Make the list item take the full width */
+  }
+
+  .sidebar ul li i {
+    margin-right: 10px; /* Space between the icon and the text */
+    width: 24px; /* Fixed width for the icon */
+}
+  
+  .sidebar ul li a {
+    display: inline-flex; /* Use inline-flex to align items */
+    align-items: center; /* Center items vertically */
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Text color */
+    padding: 10px; /* Add padding */
+    transition: all 0.3s; /* Transition effect */
+    width: calc(100% - 34px); /* Width calculation, leaving space for the icon */
+    white-space: nowrap; /* Prevent text wrapping */
+    
+  }
+  
+  .sidebar ul li a:hover {
+    background-color: #e9ecef; /* Change background on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+  }
+  
+  .main-content {
+    flex-grow: 1; /* Allow main content to fill the remaining space */
+    background-color: #fff; /* White background for the main content */
+    padding: 20px; /* Padding inside main content */
+    min-height: 100vh; /* Ensure it takes full height */
+  }
+
+  .error {
+    color: red; /* Set the error message color */
+    font-size: 12px; /* Set the font size */
+  }
+
+  .g{
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
+/* .wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+} */
+
+.wrapper {
+  display: flex;
+  flex-direction: column; /* Change to column for vertical stacking */
+  align-items: flex-start; /* Align items to the start of the container */
+  gap: -1rem; /* Space between address blocks */
+}
+
+
+
